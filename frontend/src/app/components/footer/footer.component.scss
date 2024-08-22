@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+  padding: 20px;
+  margin-top: 1rem;
+}
+
+.img-logo-footer {
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: 10px;
+}
+.fonda {
+  border-radius: 50%;
+}
+.spotilike {
+  rotate: 180deg;
+}

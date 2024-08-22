@@ -1,0 +1,36 @@
+.btn-menu-choices {
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  color: var(--main-color);
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    display: block;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: all 0.3s ease-in-out 0s;
+    background: var(--spotilike-color);
+  }
+  &:hover:after {
+    transform: scaleX(1);
+  }
+}
+
+.active {
+  border-bottom: 2px solid var(--spotilike-color);
+}
+
+
+
+

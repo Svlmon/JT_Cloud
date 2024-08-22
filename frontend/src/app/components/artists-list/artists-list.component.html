@@ -1,0 +1,18 @@
+<div class="container">
+  <div *ngIf="artists" class="row gy-3 mt-4 justify-content-center">
+    <div *ngFor="let artist of artists" class="col-3 me-4 card-artist">
+      <a class="h-100 w-100" (click)="setCurrentArtist(artist)"
+         [routerLink]="['/artists/', artist.id]" routerLinkActive="activeLinkClass" href="#">
+        <div class="d-flex justify-content-center align-items-center">
+          <img class="img-avatar" src="assets/avatars/{{artist.avatar}}" alt="Artist avatar">
+        </div>
+        <div class="p-2">
+          <h3 class="m-0">
+            {{ artist.name }}
+          </h3>
+          <p class="artist-annotation small">Artist</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

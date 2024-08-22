@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-between w-100">
+  <div class="menu-item">
+    <a href="home">
+      <img class="img-logo-footer spotilike" src="assets/images/spotilike.png" alt="Logo Spotilike">
+      Spotilike
+    </a>
+  </div>
+  <div class="menu-item">
+    <button *ngIf="!this.is_auth" [routerLink]="['/account/login']" type="button" class="btn btn-outline-success">Login</button>
+    <button *ngIf="this.is_auth" [routerLink]="['/account/logout']" type="button" class="btn btn-outline-danger">Logout</button>
+  </div>
+</div>

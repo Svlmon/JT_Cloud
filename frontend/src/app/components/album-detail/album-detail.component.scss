@@ -1,0 +1,32 @@
+.container-fluid {
+  background: linear-gradient(0deg, #232323 0%, #4d4d4d 100%);
+  color: white;
+  padding: 25px;
+}
+
+.container-image-album {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 14px;
+  margin-right: 25px;
+}
+
+.play-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.songs-pop {
+  background-image: linear-gradient(to right top, #525252, #5d5d5d, #686868, #737373, #7f7f7f);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.song-row:hover {
+  background-image: linear-gradient(to right top, #9f9d9d, #a5a3a4, #aaa9aa, #b0b0b0, #b6b6b6);
+  border-radius: 8px;
+  cursor: pointer;
+}

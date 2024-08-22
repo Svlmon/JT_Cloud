@@ -1,0 +1,34 @@
+<div class="container-fluid my-3" *ngIf="artist">
+  <div class="row">
+    <div class="col-6 container-image-artist"
+         style="background-image: url('assets/avatars/{{artist.avatar}}');">
+      <h1 style="position: absolute; bottom: 0; left: 0; margin-bottom: 40px;padding: 20px">{{ artist.name }}</h1>
+      <div class="d-inline mb-3 p-2 position-absolute bottom-0 left-O">
+        <img src="assets/images/verify.jpg" class="verify-logo" alt="Verify">
+        <span>
+          Artiste vérifié
+        </span>
+      </div>
+    </div>
+    <div class=" col-6 songs-pop">
+      <h3 class="mb-3">
+        Populaires
+      </h3>
+      <div *ngFor="let song of artist.Songs" class="row song-row d-flex justify-content-center align-items-center">
+        <div class="col-1">
+          <img src="assets/images/play-button.png" class="play-logo" alt="Play button Spotilike">
+        </div>
+        <div class="col-10">
+          <p>
+            {{ song.title }}
+          </p>
+        </div>
+        <div class="col-1">
+          <p>
+            {{ song.duration }}s
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

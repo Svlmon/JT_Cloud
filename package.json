@@ -1,0 +1,26 @@
+{
+  "name": "express-spotilike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "install-project-dependencies": "npm-run-all install-backend-dependencies install-frontend-dependencies",
+    "install-backend-dependencies": "npm install --prefix backend",
+    "install-frontend-dependencies": "npm install --prefix frontend",
+    "start-backend": "npm run --prefix backend start",
+    "start-frontend": "npm run --prefix frontend start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Borloo/express-spotilike.git"
+  },
+  "author": "Borloo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Borloo/express-spotilike/issues"
+  },
+  "homepage": "https://github.com/Borloo/express-spotilike#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
